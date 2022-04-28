@@ -1,0 +1,393 @@
+body {
+	background:  #760ca0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+*{
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+
+form {
+	width: 500px;
+	border: 2px solid #ccc;
+	padding: 30px;
+	background: #fff;
+	border-radius: 15px;
+}
+input[type = submit] {
+
+	cursor: pointer;
+	border: 2px solid green;
+	font-size: 20px;
+}
+input[type = submit]:hover{
+	background: rgb(38, 31, 138);
+	color: rgb(255, 255, 255);
+	border: none;
+	outline: none;
+}
+input[type=text]:focus {
+	border: 3px solid rgb(133, 189, 211);
+  }
+
+h2 {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+input {
+	display: block;
+	border: 2px solid rgb(133, 161, 139);
+	width: 95%;
+	padding: 10px;
+	margin: 10px auto;
+	border-radius: 5px;
+	outline: none;
+}
+.header{
+	width: 100%;
+	height: 100px;
+	background: #1690A7;
+	border-radius: 3px;
+	z-index: 1;
+	
+}
+.header img{
+	margin-left: 18px;
+	margin-top: 16px;
+	display: inline;
+}
+#usertype{
+	display: block;
+	border: 2px solid #ccc;
+	width: 95%;
+	padding: 10px;
+	margin: 10px auto;
+	border-radius: 5px;
+}
+label {
+	color: #888;
+	font-size: 18px;
+	padding: 10px;
+}
+
+td a button {
+	float: right;
+	background: darkcyan;
+	padding: 3px 5px;
+	color: rgb(253, 253, 253);
+	border-radius: 5px;
+	margin-right: 10px;
+	border: none;
+	cursor: pointer;
+	font-size: 18px;
+}
+td a button:hover{
+ background: rgb(46, 160, 31);
+ color: #fff;
+}
+.alert{
+	color: yellow;
+	text-align: center;
+	font-size: 22px;
+	font-weight: bolder;
+	
+	
+
+}
+.error {
+   background: #F2DEDE;
+   color: #A94442;
+   padding: 10px;
+   width: 95%;
+   border-radius: 5px;
+   margin: 20px auto;
+}
+
+.success {
+   background: #D4EDDA;
+   color: #40754C;
+   padding: 10px;
+   width: 95%;
+   border-radius: 5px;
+   margin: 20px auto;
+}
+
+h1 {
+	text-align: center;
+	color: #fff;
+}
+select{
+	position: relative;
+	width: 138px;
+	height: 35px;
+	background: #fff;
+	border-radius: 3px;
+	outline: none;
+	font-size: 16px;
+	cursor: pointer;
+	padding: 0 10px;
+	appearance: none;
+}
+select::after{
+	content: '';
+	border-width: 5px;
+	border-color: transparent;
+	border-top-color: #222;
+	display: inline;
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+}
+.head{
+
+}
+
+.ca {
+	font-size: 14px;
+	display: inline-block;
+	padding: 10px;
+	text-decoration: none;
+	color: #444;
+}
+.ca:hover {
+	text-decoration: underline;
+} 
+
+table{
+	position: absolute;
+	z-index: 2;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width: 80%; 
+	border-collapse: collapse;
+	border-spacing: 0;
+	box-shadow: 0 5px 15px rgba(7, 7, 7, 0.7);
+	border-radius: 12px 12px 0 0;
+	overflow: hidden;
+	z-index: -1;
+	margin-top: 30px;
+	
+   
+   }
+   td{
+	padding: 2px 5px;
+	text-align: center;
+	
+   
+   }
+   th{
+	background-color: #1690A7;
+	color: #fafafa;
+	font-family: 'Open Sans',Sans-serif;
+	font-weight: 200;
+	text-transform: uppercase;
+   
+   }
+   tr{
+	width: 90%;
+	background-color: #fafafa;
+	font-family: 'Montserrat', sans-serif;
+   }
+   tr:nth-child(even){
+	background-color: #eeeeee;
+   }
+
+   ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+	margin-top: 15px;
+}
+
+   ul li{
+    width: 200px;
+    height: 40px;
+    background-color: rgb(245, 248, 245);
+    opacity: 0.9;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+}
+   ul li a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+	background: #1690A7;
+}
+ul li a:hover{
+    background-color: #fff;
+	color:#1690A7;
+}
+
+ul li {
+    display: none;
+}
+.menu{
+	cursor: pointer;
+	float: left;
+	width: 100px;
+
+}
+
+.menu:hover ul li {
+	text-align: left;
+    display: block;
+}
+
+/*Clinics Tab Styling*/
+
+.clinic{
+	display: inline-block;
+	margin-left: 200px;
+	cursor: pointer;
+	position: absolute;
+}
+
+.clinic:hover ul li{
+	display: block;
+	text-align: left;
+	margin-left: 3px;
+}
+.clinic h3{
+	float: left;
+	font-size: 25px;
+	color: #fff;
+	margin-left: 4px;
+	text-decoration: underline;
+}
+.clinic img{
+	width: 50px;
+}
+
+/*Village Tab Styling*/
+
+.village{
+	display: inline-block;
+	margin-left: 450px;
+	cursor: pointer;
+	position: absolute;
+}
+.village:hover ul li{
+	display: block;
+	text-align: left;
+}
+.village h3{
+	float: left;
+	font-size: 25px;
+	color: #fff;
+	margin-left: 4px;
+	text-decoration: underline;
+}
+.village img{
+	width: 50px;
+}
+
+/*Districts Tab Styling*/
+
+.district{
+	display: inline-block;
+	margin-left: 700px;
+	cursor: pointer;
+	position: absolute;
+}
+.district:hover ul li{
+	display: block;
+	text-align: left;
+}
+.district h3{
+	float: left;
+	font-size: 25px;
+	color: #fff;
+	margin-left: 4px;
+	text-decoration: underline;
+}
+.district img{
+	width: 50px;
+}
+/* Profile Tab styling*/
+.profile{
+	display: inline-block;
+	margin-left: 1000px;
+	cursor: pointer;
+	position: absolute;
+}
+.profile:hover ul li{
+	display: block;
+	text-align: left;
+}
+.profile h3{
+	float: left;
+	font-size: 25px;
+	color: #fff;
+	margin-left: 4px;
+	text-decoration: underline;
+}
+
+.profile img{
+	width: 50px;
+}
+nav{
+	
+	height: 60px;
+	width: 460px;
+	margin-right: 70%;
+	margin-top: 0;
+	position: relative;
+	background: green;
+	border-radius: 5px;
+}
+nav .head {
+	display: inline-block;
+	margin-left: 10px;
+	
+	
+}
+nav .head h2{
+	color: #fff;
+	font-weight: bold;
+	font-family: Montserrat;
+}
+nav .head img{
+	margin-bottom: 5px;
+	float: right;
+	margin-left: 245px;
+	width: 25px;
+}
+.register-btn{
+	cursor: pointer;
+	border: 2px solid green;
+	font-size: 20px;
+	width: 145px;
+	height: 30px;
+	float: right;
+	border-radius: 6px;
+}
+.register-btn:hover{
+	background: rgb(38, 31, 138);
+	color: rgb(255, 255, 255);
+	border: none;
+	outline: none;
+}
+.add-btn input[type="button"]{
+	width: 150px;
+	height: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
